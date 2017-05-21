@@ -74,12 +74,12 @@ fds ds fdsfds fsdfs
 ```
 """
 
-print('\nSimple Markdown\n' + simple_markdown_case + '\n\nTranslates to...\n\n',
-      markdown.markdown(simple_markdown_case, extensions=[BSCodeTabExtension()]))
+print(('\nSimple Markdown\n' + simple_markdown_case + '\n\nTranslates to...\n\n',
+      markdown.markdown(simple_markdown_case, extensions=[BSCodeTabExtension()])))
 
 
-print('\nAverage Markdown\n' + average_markdown_case + '\n\nTranslates to...\n\n',
-      markdown.markdown(average_markdown_case, extensions=[BSCodeTabExtension()]))
+print(('\nAverage Markdown\n' + average_markdown_case + '\n\nTranslates to...\n\n',
+      markdown.markdown(average_markdown_case, extensions=[BSCodeTabExtension()])))
 
 
 

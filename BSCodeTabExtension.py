@@ -333,12 +333,12 @@ class CodeFencePreprocessor(Preprocessor):
     @staticmethod
     def filter_content(content):
 
-        string_block = content.replace(u'\u2018', '&lsquo;')
-        string_block = string_block.replace(u'\u2019', '&rsquo;')
-        string_block = string_block.replace(u'\u201c', '&ldquo;')
-        string_block = string_block.replace(u'\u201d', '&rdquo;')
-        string_block = string_block.replace(u'\u2013', '&ndash;')
-        string_block = string_block.replace(u'\xa0', '')
+        string_block = content.replace('\u2018', '&lsquo;')
+        string_block = string_block.replace('\u2019', '&rsquo;')
+        string_block = string_block.replace('\u201c', '&ldquo;')
+        string_block = string_block.replace('\u201d', '&rdquo;')
+        string_block = string_block.replace('\u2013', '&ndash;')
+        string_block = string_block.replace('\xa0', '')
 
         try:
             string_block = string_block.decode('ascii', 'remove')
